@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp_module04",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/viniciusnyari/bootcamp_module04.git",
+  "author": "ViniciusNyari <viniciusnyari@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0"
+  }
+}

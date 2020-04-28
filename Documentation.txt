@@ -1,1 +1,22 @@
 Roteiro desse documento
+
+#Criando o arquivo package.json
+yarn init -y
+
+#Adicionando bilbioteca 'Babel' como desenvolvedor
+yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli -D
+Ou altera 'dependencies' para 'devDependencies'
+@babel/preset-env: alterar as funcionalidades do javascript que o navegador ainda não entende - import/export - as partes de arrow functions de classes (const soma = (a,b)=> a+b;)
+@babel/preset-react: ele vai transformar as coisas que o navegador não entende do React, como: jsx as funcionalidades exclusivas do react
+
+#Adicionando biblioteca 'React' e 'React-Dom'
+yarn add react react-dom
+
+#Adicionando bilbioteca 'babel-loader' como Desenvolvedor 'D'
+yarn add babel-loader -D
+
+#Buildando a aplicação - usa o webpack - gera na pasta 'public' um arquivo chamado 'bundle.js' com o código que o navegador entende
+yarn build
+
+https://skylab.rocketseat.com.br/node/introducao-ao-react-1
+08:30
