@@ -5,18 +5,14 @@
 ------------------------------------------------------------------------------------------------------------------------------
 
 Conceitos do React <br>
-Configurando estrutura
-Criando componente raiz
-Importando CSS
-Importando imagens
-Class Components
-Estado & Imutabilidade
-Removendo itens do estado
-Propriedades do React
-Default Props & PropTypes
-Ciclo de vida do componente
-Debugando React com DevTools
-
-------------------------------------------------------------------------------------------------------------------------------
-#Roteiro
-------------------------------------------------------------------------------------------------------------------------------
+Configurando estrutura <br>
+Criando componente raiz <br>
+Importando CSS <br>
+Importando imagens <br>
+Class Components <br>
+Estado & Imutabilidade <br>
+Removendo itens do estado <br>
+Propriedades do React <br>
+Default Props & PropTypes <br>
+Ciclo de vida do componente <br>
+Debugando React com DevTools <br>
