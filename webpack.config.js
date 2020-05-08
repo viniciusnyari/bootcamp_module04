@@ -9,15 +9,19 @@ module.exports = {
     path: path.resolve(__dirname,'public'),
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: path.resolve(__dirname,'public'),
+  },
   module: {    
     rules: [
       {
-        // '//' indica que é uma expressão regular
+        // '//' indica que é uma expressão regular (fica entre duas barras)
         // '\.' para que seja entendido como '\.' já que o ponto pode ser qualquer caracter
         // '$' que a nossa string deve terminar exatamente com .js
         test: /\.js$/,
 
         // Ignorar essa pasta, pois os arquivos dessa já estão transpilados (foram adicionados como bibliotecas)
+        // Por que os arquivos que estão nessa pasta já estão 'transpilados' - sintaxe que o browser entende
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
