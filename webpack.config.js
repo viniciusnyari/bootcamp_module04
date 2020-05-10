@@ -32,7 +32,14 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-      ]
+        ]
+      },
+      {
+        //arquivos terminando ($) com extensão gif ou png ou jpg ou jpeg e case insensitive (/i)
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: {
+          loader: 'file-loader',
+        }
       }
     ]
   }
