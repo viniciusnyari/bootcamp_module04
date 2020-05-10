@@ -1,9 +1,13 @@
 //Toda vez que tiver presença de html, precisa ter o react importado
 import React from 'react';
 import './App.css';
-import profile from './assets/profile.jpg';
+import TechList from './components/TechList';
 
 function App(){
-  return <img src={profile}></img>
+  return <TechList />
 }
 export default App;
+
+//Componentes podem ser criados usando classes ou funções. 
+//Aqui estamos construindo utilizando function 
+//Mas podemos usar classes como em  'TechList.js'
