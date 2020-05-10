@@ -30,13 +30,25 @@ class TechList extends Component {
     });
   }
 
+  handleDelete = (tech) => {
+    this.setState({ techs: this.state.techs.filter(t=> t != tech)});
+  }
+
   // <> é chamado de fragment no React - ao invésde usar uma div
   // coloca o conteudo direto na tag principal
   render() {
     return (
+      //Precisa ser no formato de arrow function no evento do botão 'Remover'
+      //para executar somente quando clicar
       <form onSubmit={this.handleSubmit}>
         <ul>
-          { this.state.techs.map(tech=> <li key={tech}>{tech}</li>)}
+          { this.state.techs.map(tech=> (
+            <li key={tech}>
+              {tech}
+              
+              <button onClick={() => this.handleDelete(tech)} type="button">Remover</button>
+            </li>
+          ))}
         </ul>
         <input 
           type="text" 
