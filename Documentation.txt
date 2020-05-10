@@ -30,3 +30,8 @@ Builda - gera o bundle novamente - apresenta a página local alterada
 #Tipos de build - package.json
 "webpack-dev-server --mode development"' --> permitem conhecer o conteúdo
 "webpack-dev-server --mode production"' --> minifica o código gerado
+
+#Instalar dois loader de css
+yarn add style-loader css-loader -D
+style-loader: usado para poder importar arquivos css
+css-loader: permitir entender a importação de outros arquivos aqui dentro 
