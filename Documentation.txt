@@ -46,3 +46,6 @@ yarn add @babel/plugin-proposal-class-properties -D
 Dado uma propriedade requerida que é esquecida de passar, o react retorna um erro no console
 Mensagem de erro: Failed prop type: The prop `onDelete` is marked as required in `TechItem`, but its value is `undefined`.
 yarn add props-types
+
+
+C:\Temp\Bootcamp2019\bootcamp_module04
