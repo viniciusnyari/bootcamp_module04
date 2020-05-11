@@ -38,3 +38,11 @@ css-loader: permitir entender a importação de outros arquivos aqui dentro
 
 #Instalando file loader - para trabalhar com imagens - tem alteração no webpack.config
 yarn add file-loader -D 
+
+#Instalando babel-plugin-proposal-class-properties
+yarn add @babel/plugin-proposal-class-properties -D
+
+#Instalando uma extensão chamada 'props-types' - Controle de propriedades de objetos
+Dado uma propriedade requerida que é esquecida de passar, o react retorna um erro no console
+Mensagem de erro: Failed prop type: The prop `onDelete` is marked as required in `TechItem`, but its value is `undefined`.
+yarn add props-types

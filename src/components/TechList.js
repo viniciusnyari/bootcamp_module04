@@ -2,6 +2,11 @@ import React, { Component} from 'react';
 import TechItem from './TechItem';
 
 class TechList extends Component {
+
+  //Conceito de Default Props na classe
+  //static defaultProps = {
+    //tech: 'Oculto',
+  //};
   
   //Todo array de estado 'state' é imutável e não pode ser alterado diretamente
   //por isso precisamos dos métodos 'setState'
@@ -48,8 +53,8 @@ class TechList extends Component {
             key={tech} 
             tech={tech} 
             onDelete={()=> this.handleDelete(tech)}
-          />
-          )}
+          />          
+          )}         
         </ul>
         <input 
           type="text" 
