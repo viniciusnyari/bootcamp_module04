@@ -12,12 +12,37 @@ class TechList extends Component {
   //por isso precisamos dos métodos 'setState'
   state = {
     newTech: '',
-    techs: [
-      'Node.js',
-      'ReactJS',
-      'React Native'
-    ]
+    techs: []
   };
+
+  //Início da explicação do Ciclo de vida dos componentes
+  
+  //Executado assim que o componente aparece na tela
+  //Chamar uma API por exemplo para carregar os dados
+  componentDidMount(){
+    //Obtém do storage do navegador a key = techs
+    const techs = localStorage.getItem('techs');
+    if(techs){
+      this.setState({ techs:JSON.parse(techs)});
+    }
+  }
+
+  //Executado sempre que houver alterações nas props ou estado
+  //Permite comparar as propriedades
+  //this.state ou this.props com o que está sendo passando como parâmetro
+  componentDidUpdate(prevProps, prevState){
+    if(prevState.techs != this.state.techs){
+      //Persistindo no navegador - F12 - Application - LocalStorage
+      localStorage.setItem('techs',JSON.stringify(this.state.techs));
+    }
+  }
+
+  // Executado quando o componnte deixa de existir
+  componentWillUnmount(){
+
+  }
+
+  //Fim da explicação do Ciclo de vida dos componentes
 
   //Precisa ser no formato de 'arrow function' fois senão não tem acesso a 
   //variável 'this'
